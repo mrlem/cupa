@@ -1,0 +1,74 @@
+:not(img).cupa-editable {
+  border: 1px solid transparent;
+}
+
+.cupa-saved, .cupa-notsaved {
+  position: fixed;
+  display: none;
+  top: 96px; 
+  left: 64px;
+  padding: 12px;
+  background: black;
+  color: white;
+  box-shadow: 4px 4px 20px #000;
+}
+
+.cupa-connected {
+  display: none;
+}
+
+.cupa-admin img.cupa-editable:hover {
+  -webkit-animation: imageOn 0.5s ease-in-out; /* Safari 4+ */
+  -moz-animation: imageOn 0.5s ease-in-out;    /* Fx 5+ */
+  -o-animation: imageOn 0.5s ease-in-out;      /* Opera 12+ */
+  animation: imageOn 0.5s ease-in-out;         /* IE 10+, Fx 29+ */
+  opacity: 0.7;
+}
+
+.cupa-admin :not(img).cupa-editable:hover {
+  border: 1px solid blue;
+}
+
+#cupa-login {
+  position: fixed;
+  bottom: 96px;
+  left: 64px;
+  padding: 12px;
+  background: black;
+  color: white;
+  box-shadow: 4px 4px 20px #000;
+}
+
+#cupa-login * {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#cupa-login input, #cupa-login button {
+  color: #444;
+}
+
+#cupa-login button {
+  margin: 16px auto 0 auto;
+}
+
+@-webkit-keyframes imageOn {
+    0%      { opacity: 1; }
+    100%    { opacity: 0.7; }
+}
+
+@-moz-keyframes imageOn {
+    0%      { opacity: 1; }
+    100%    { opacity: 0.7; }
+}
+
+@-o-keyframes imageOn {
+    0%      { opacity: 1; }
+    100%    { opacity: 0.7; }
+}
+
+@keyframes imageOn {
+    0%      { opacity: 1; }
+    100%    { opacity: 0.7; }
+}
+

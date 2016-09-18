@@ -1,0 +1,95 @@
+html {
+  background: #aaaaaa;
+  font-family: 'Liberation Sans';
+  font-size: 0.8em;
+  color: #444;
+}
+
+body {
+  padding-bottom: 32px;
+}
+
+section {
+  width: 60%;
+  min-width: 400px;
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 12px;
+  background: white;
+  box-shadow: 4px 4px 20px #000;
+}
+
+article img {
+  float: left;
+  margin: 0 12px 12px 0;
+  box-shadow: 2px 2px 8px #000;
+  border: 6px solid white;
+  border-radius: 8px;
+}
+
+article {
+  margin-bottom: 16px;
+}
+
+article:first {
+  margin-bottom: 0;
+}
+
+article:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-size: 150%;
+  margin: 0 0 8px 0;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  position: relative;
+  top: 0px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+header, footer {
+  left: 0;
+  right: 0;
+  padding: 8px;
+  color: #444444;
+  background-color: black;
+  box-shadow: 0 0 20px #000;
+}
+
+header h1 {
+  text-align: center;
+  text-shadow: none;
+}
+
+em {
+  font-weight: bold;
+}
+
+img {
+  line-height: 150px;
+  color: #444;
+  text-align: center;
+}
