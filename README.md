@@ -29,15 +29,15 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 * to make a text or an image editable, make sure the element has an id, and add
 
-```class="cupa-editable"```
+```<... class="cupa-editable" ...>```
 
 * to make elements visible only when the user is authenticated, add
 
-```class="cupa-connected"```
+```<... class="cupa-connected" ...>```
 
 * to make elements visible only when the user is not authenticated, add
 
-```class="cupa-notconnected"```
+```<... class="cupa-notconnected" ...>```
 
 ### For the user: editing the content:
 
