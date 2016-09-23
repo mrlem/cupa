@@ -122,11 +122,21 @@ function Cupa() {
   }
 
   function _init() {
-    $(".cupa-editable").not("img").each(function() {
+    $(".cupa-editable").not(":header img").each(function() {
       this.onkeydown = function(event) {
         if (event.keyCode == 13) {
           event.preventDefault();
           _insertLineBreakAtCursor();
+        }
+      };
+    });
+
+    $(":header.cupa-editable").not("img").each(function() {
+      var target = $(this);
+      this.onkeydown = function(event) {
+        if (event.keyCode == 13) {
+          event.preventDefault();
+          target.blur();
         }
       };
     });
