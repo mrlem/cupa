@@ -17,27 +17,39 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 * create your web-page
 * include the cupa CSS in your headers:
 
-```<link rel="stylesheet" href="styles/cupa.css" type="text/css" />```
+```html
+<link rel="stylesheet" href="styles/cupa.css" type="text/css" />
+```
 
 * include the jquery library in your headers:
 
-```<script src="js/lib/jquery-min.js"></script>```
+```html
+<script src="js/lib/jquery-min.js"></script>
+```
 
 * include the cupa library just before the end of your body:
 
-```<script src="js/cupa.js"></script>```
+```html
+<script src="js/cupa.js"></script>
+```
 
 * to make a text or an image editable, make sure the element has an id, and add
 
-```<... class="cupa-editable" ...>```
+```html
+<tag class="cupa-editable">
+```
 
 * to make elements visible only when the user is authenticated, add
 
-```<... class="cupa-connected" ...>```
+```html
+<tag class="cupa-connected">
+```
 
 * to make elements visible only when the user is not authenticated, add
 
-```<... class="cupa-notconnected" ...>```
+```html
+<tag class="cupa-notconnected">
+```
 
 ### For the user: editing the content:
 
