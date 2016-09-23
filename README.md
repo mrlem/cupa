@@ -60,14 +60,14 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 ## FAQ
 
-* What does Cupa stand for?
+* *What does Cupa stand for?*
 
     -- **CU**stomizable **PA**ge
 
-* Could you please add feature XXX to Cupa?
+* *Could you please add feature XXX to Cupa?*
 
     -- Probably not, but contributions are welcome :o)
 
-* I use Microsoft Internet Explorer / Edge, and something doesn't work, could you fix it?
+* *I use Microsoft Internet Explorer / Edge, and something doesn't work, could you fix it?*
 
     -- No (I don't have any Windows computer), but contributions are welcome :o)
