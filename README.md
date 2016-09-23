@@ -59,8 +59,3 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 * I use Microsoft Internet Explorer / Edge, and something doesn't work, could you fix it?
 
     -- No (I don't have any Windows computer), but contributions are welcome :o)
-
-## TODO
-
-* Better pitch to show who can use it: Cupa -> [HTML5/CSS developer] -> web-page -> [User] -> can edit the page
-
