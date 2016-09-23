@@ -36,19 +36,19 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 * to make a text or an image editable, make sure the element has an id, and add
 
 ```html
-<tag class="cupa-editable">
+<element class="cupa-editable">
 ```
 
 * to make elements visible only when the user is authenticated, add
 
 ```html
-<tag class="cupa-connected">
+<element class="cupa-connected">
 ```
 
 * to make elements visible only when the user is not authenticated, add
 
 ```html
-<tag class="cupa-notconnected">
+<element class="cupa-notconnected">
 ```
 
 ### For the user: editing the content:
