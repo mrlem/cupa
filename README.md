@@ -2,7 +2,7 @@
 
 *A super-easy to use tool to build web-pages that your users can customize themselves.*
 
-If you know how to write a webpage in HTML5 / CSS, this should be enough to use Cuda: no knowledge about Javascript, PHP, or MySQL is required.
+If you know how to write a webpage in HTML5 / CSS, this should be enough to use Cupa: no knowledge about Javascript, PHP, or MySQL is required.
 
 ## Installation
 
@@ -52,7 +52,7 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
     -- **CU**stomizable **PA**ge
 
-* Could you please add feature XXX to Cuda?
+* Could you please add feature XXX to Cupa?
 
     -- Probably not, but contributions are welcome :o)
 
