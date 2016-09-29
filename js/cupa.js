@@ -90,6 +90,16 @@ function Cupa() {
       type: "hidden"
     }))
     .append($("<input/>", {
+      id: "cupa-picture-width",
+      name: "width",
+      type: "hidden"
+    }))
+    .append($("<input/>", {
+      id: "cupa-picture-height",
+      name: "height",
+      type: "hidden"
+    }))
+    .append($("<input/>", {
       id: "cupa-picture-file",
       name: "file",
       type: "file",
@@ -261,6 +271,12 @@ function Cupa() {
 
   function _editPicture(element) {
     $("#cupa-picture-id").val(element.attr("id"));
+    if (element.attr("width") != null) {
+      $("#cupa-picture-width").val(element.attr("width"));
+    }
+    if (element.attr("height") != null) {
+      $("#cupa-picture-height").val(element.attr("height"));
+    }
     $("#cupa-picture-file").focus().trigger("click");
   }
 
@@ -277,8 +293,10 @@ function Cupa() {
       var pictureId = $("#cupa-picture-id").val();
       var picture = $("#" + pictureId);
       picture.removeAttr("src").attr("src", "data/img-" + pictureId + ".jpg?" + new Date().getTime());
-      $("#cupa-picture-id").val("");
-      $("#cupa-picture-file").val("");
+      $("#cupa-picture-id").val(null);
+      $("#cupa-picture-width").val(null);
+      $("#cupa-picture-height").val(null);
+      $("#cupa-picture-file").val(null);
       _onSaved();
     })
     .fail(function() {
