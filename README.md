@@ -35,19 +35,19 @@ Check sample.html for a real example. Here's a brief explanation:
 <script src="js/cupa.js"></script>
 ```
 
-* to make a text or an image editable, make sure the element has an id, and add
+* to make a text or an image editable, make sure the element (and <img>, <div>, <p>, ...) has an id, and add:
 
 ```html
-<element class="cupa-editable">
+<element id="my-id" class="cupa-editable">
 ```
 
-* to make elements visible only when the user is authenticated, add
+* to make elements visible only when the user is authenticated, add:
 
 ```html
 <element class="cupa-connected">
 ```
 
-* to make elements visible only when the user is not authenticated, add
+* to make elements visible only when the user is not authenticated, add:
 
 ```html
 <element class="cupa-notconnected">
