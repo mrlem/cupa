@@ -35,7 +35,7 @@ Check sample.html for a real example. Here's a brief explanation:
 <script src="js/cupa.js"></script>
 ```
 
-* to make a text or an image editable, make sure the element (and <img>, <div>, <p>, ...) has an id, and add:
+* to make a text or an image editable, make sure the element (and img, div, p, ...) has an id, and add:
 
 ```html
 <element id="my-id" class="cupa-editable">
