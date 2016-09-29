@@ -73,3 +73,12 @@ Check sample.html for a real example. Here's a brief explanation:
 * *I use Microsoft Internet Explorer / Edge, and something doesn't work, could you fix it?*
 
     -- No (I don't have any Windows computer), but contributions are welcome :o)
+
+* *How secure is Cupa authentication?*
+
+    -- Decent for a personal usage, but not very much nevertheless: credentials are just sent over the network. To avoid interception, deploy Cupa on an HTTPS server.
+    
+* *What if the page users use big pictures? won't the page become heavy?*
+
+    -- Cupa resizes pictures based on width/height attributes specified in the HTML for the image.
+    
