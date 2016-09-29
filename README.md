@@ -12,6 +12,8 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 ## Usage
 
+Check sample.html for a real example. Here's a brief explanation:
+
 ### For the web-page developer:
 
 * create your web-page
