@@ -8,8 +8,8 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 * change the password in api/login.php ($adm_pw) to your liking (default is 'secret')
 * just drop all files from the repo somewhere in the doc root of your PHP enabled web-server (with GD module)
-* make sure the whole directory belongs to the web-server's user - on unix, use something like: `chown -R www-data:www-data cupa`
-* go to: http://**your_server**/**your_path**/sample.html
+* **make sure** the whole directory belongs to the web-server's user - on unix, use something like: `chown -R www-data:www-data cupa`
+* go to: http://*your_server*/*your_path*/sample.html
 
 ## Usage
 
@@ -20,7 +20,7 @@ Check sample.html for a working example. Here's a brief explanation:
 * click "Connect" at the bottom left corner of the sample page
 * enter the default user credentials:
     * user: admin
-    * password: **your_password**
+    * password: *your_password*
 * click the editable element you want to change
 
 ### For the web-page developer:
