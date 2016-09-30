@@ -6,13 +6,19 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 ## Installation
 
+### The quick way
+
 * change the password in api/login.php ($adm_pw) to your liking (default is 'secret')
-* just drop all files from the repo somewhere in the doc root of your PHP enabled web-server
+* just drop all files from the repo somewhere in the doc root of your PHP enabled web-server (make sure that you web server has write access to the data directory)
 * go to: http://**your_server**/**your_path**/sample.html
+
+### How it meant to be used
+
+Cupa is a tool to integrate to your own HTML pages
 
 ## Usage
 
-Check sample.html for a real example. Here's a brief explanation:
+Check sample.html for a working example. Here's a brief explanation:
 
 ### For the web-page developer:
 
@@ -67,7 +73,7 @@ Check sample.html for a real example. Here's a brief explanation:
 
 ### For the user: editing the content:
 
-* click "Connect" at the bottom right corner of the sample page
+* click "Connect" at the bottom left corner of the sample page
 * enter the default user credentials:
     * user: admin
     * password: **your_password**
@@ -94,3 +100,6 @@ Check sample.html for a real example. Here's a brief explanation:
 
     -- Cupa resizes pictures based on width/height attributes specified in the HTML for the image.
     
+* *Are there any requirements for Cupa to run?*
+
+    -- Yes, your hosting should support PHP, with GD module (which allows Cupa to resize images).
