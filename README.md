@@ -4,7 +4,7 @@
 
 If you know how to write a webpage in HTML5 / CSS, this should be enough to use Cupa: no knowledge about Javascript, PHP, or MySQL is required.
 
-## Basic installation
+## Installation
 
 * change the password in api/login.php ($adm_pw) to your liking (default is 'secret')
 * just drop all files from the repo somewhere in the doc root of your PHP enabled web-server (make sure that you web server has write access to the data directory)
