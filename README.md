@@ -81,7 +81,7 @@ Check sample.html for a working example. Here's a brief explanation:
 
 * *Could you please add feature XXX to Cupa?*
 
-    -- Probably not, but contributions are welcome :o)
+    -- May be, but don't forget: contributions are welcome :o)
 
 * *I use Microsoft Internet Explorer / Edge, and something doesn't work, could you fix it?*
 
