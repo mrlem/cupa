@@ -4,17 +4,11 @@
 
 If you know how to write a webpage in HTML5 / CSS, this should be enough to use Cupa: no knowledge about Javascript, PHP, or MySQL is required.
 
-## Installation
-
-### The quick way
+## Basic installation
 
 * change the password in api/login.php ($adm_pw) to your liking (default is 'secret')
 * just drop all files from the repo somewhere in the doc root of your PHP enabled web-server (make sure that you web server has write access to the data directory)
 * go to: http://**your_server**/**your_path**/sample.html
-
-### How it meant to be used
-
-Cupa is a tool to integrate to your own HTML pages
 
 ## Usage
 
