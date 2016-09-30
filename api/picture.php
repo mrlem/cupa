@@ -35,7 +35,10 @@ else {
 list($real_width, $real_height, $type, $attr) = getimagesize($picture);
 if (($picture_width == null || $real_width == $picture_width) && ($picture_height == null || $real_height == $picture_height)) {
   // no html constraint: write image directly
-  file_put_contents($filename, $picture_content);
+  if (file_put_contents($filename, $picture_content) == FALSE) {
+    header("HTTP/1.1 403 Forbidden");
+    exit;
+  }
 }
 else {
   // html constraints: resize image
@@ -68,7 +71,10 @@ else {
   $dst = imagecreatetruecolor($picture_width, $picture_height);
   imagecopyresampled($dst, $src, 0, 0, 0, 0, $picture_width, $picture_height, $real_width, $real_height);
   imagedestroy($src);
-  imagejpeg($dst, $filename);
+  if (imagejpeg($dst, $filename) == FALSE) {
+    header("HTTP/1.1 403 Forbidden");
+    exit;
+  }
 }
 
 exit;

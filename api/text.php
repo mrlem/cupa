@@ -22,7 +22,11 @@ else {
     header("HTTP/1.1 403 Forbidden");
     exit;
   }
-  file_put_contents($filename, $text_content);
+
+  if (file_put_contents($filename, $text_content) == FALSE) {
+    header("HTTP/1.1 403 Forbidden");
+    exit;
+  }
 }
 exit;
 ?>
