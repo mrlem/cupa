@@ -53,6 +53,18 @@ Check sample.html for a real example. Here's a brief explanation:
 <element class="cupa-notconnected">
 ```
 
+* to prompt the user for authentication, add:
+
+```html
+<element onclick="cupa.askConnect(); return false;">
+```
+
+* to enable to user to disconnect, add:
+
+```html
+<element onclick="cupa.disconnect(); return false;">
+```
+
 ### For the user: editing the content:
 
 * click "Connect" at the bottom right corner of the sample page
