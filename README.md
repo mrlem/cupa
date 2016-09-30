@@ -14,6 +14,13 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 Check sample.html for a working example. Here's a brief explanation:
 
+### For the user: editing the content:
+
+* click "Connect" at the bottom left corner of the sample page
+* enter the default user credentials:
+    * user: admin
+    * password: **your_password**
+
 ### For the web-page developer:
 
 * create your web-page
@@ -64,13 +71,6 @@ Check sample.html for a working example. Here's a brief explanation:
 ```html
 <element onclick="cupa.disconnect(); return false;">
 ```
-
-### For the user: editing the content:
-
-* click "Connect" at the bottom left corner of the sample page
-* enter the default user credentials:
-    * user: admin
-    * password: **your_password**
 
 ## FAQ
 
