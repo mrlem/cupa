@@ -1,1 +1,1 @@
-<span style="font-family: &quot;Liberation Sans&quot;; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 12.8px;">Blabla bla</span>
+You can also click a picture to edit it, this prompts you to select the new picture (be aware that default server settings might restrict file upload size to something like 2 Mb)

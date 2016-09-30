@@ -1,1 +1,1 @@
-<span style="font-family: &quot;Liberation Sans&quot;; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 12.8px;">Blabla bla</span>
+Once in admin mode, click a text to start editing it, click somewhere else when done (note that when editing titles, pressing enter will end edition too)
