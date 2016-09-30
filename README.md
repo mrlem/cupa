@@ -14,12 +14,13 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 Check sample.html for a working example. Here's a brief explanation:
 
-### For the user: editing the content:
+### For the end-user:
 
 * click "Connect" at the bottom left corner of the sample page
 * enter the default user credentials:
     * user: admin
     * password: **your_password**
+* click the editable element you want to change
 
 ### For the web-page developer:
 
