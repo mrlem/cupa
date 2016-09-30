@@ -1,1 +1,1 @@
-Blabla bla
+To enter admin mode, click "Connect" at the bottom left corner. Default user name and password are admin / secret
