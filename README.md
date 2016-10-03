@@ -13,7 +13,7 @@ If you know how to write a webpage in HTML5 / CSS, this should be enough to use 
 
 ## Usage
 
-Check sample.html for a working example. Here's a brief explanation:
+Check the [sample page](sample.html) for a working example. Here's a brief explanation:
 
 ### For the end-user:
 
