@@ -15,9 +15,9 @@ $picture_height = $_POST['height'];
 $picture = $_FILES['file']["tmp_name"];
 $picture_content = file_get_contents($picture);
 
+// sanitize inputs
+$picture_id = preg_replace("/[^a-zA-Z0-9\._\-]/", "", $picture_id);
 
-// process params
-$filename = "../data/img-$picture_id.jpg"; // TODO - sanitize this
 if (!is_numeric($picture_width)) {
   $picture_width = null;
 }
@@ -30,6 +30,9 @@ if (!is_numeric($picture_height)) {
 else {
   $picture_height += 0;
 }
+
+// process params
+$filename = "../data/img-$picture_id.jpg";
 
 // analyze image
 list($real_width, $real_height, $type, $attr) = getimagesize($picture);

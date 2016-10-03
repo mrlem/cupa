@@ -4,7 +4,10 @@
 $text_id = $_POST['id'];
 $text_content = isset($_POST['text']) ? $_POST['text'] : null;
 
-$filename = "../data/text-$text_id.txt"; // TODO - sanitize this
+// sanitize inputs
+$text_id = preg_replace("/[^a-zA-Z0-9\._\-]/", "", $text_id);
+
+$filename = "../data/text-$text_id.txt";
 
 // read the content
 if ($text_content == null) {
