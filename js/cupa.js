@@ -183,6 +183,7 @@ function Cupa() {
       if (!isAdmin) return;
       var target = $(event.target);
       _editPicture(target);
+      event.preventDefault();
     });
 
     $("#cupa-picture-file").change(function() {
