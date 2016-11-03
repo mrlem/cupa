@@ -271,13 +271,23 @@ function Cupa() {
   // .. pictures
 
   function _editPicture(element) {
+    var specifiedWidth = element.attr("width");
+    if (specifiedWidth == null && element[0].style["width"] != null) {
+      specifiedWidth = parseInt(element[0].style["width"]);
+    }
+    if (specifiedWidth != null) {
+      $("#cupa-picture-width").val(specifiedWidth);
+    }
+
+    var specifiedHeight = element.attr("height");
+    if (specifiedHeight == null && element[0].style["height"] != null) {
+      specifiedHeight = parseInt(element[0].style["height"]);
+    }
+    if (specifiedHeight != null) {
+      $("#cupa-picture-height").val(specifiedHeight);
+    }
+
     $("#cupa-picture-id").val(element.attr("id"));
-    if (element.attr("width") != null) {
-      $("#cupa-picture-width").val(element.attr("width"));
-    }
-    if (element.attr("height") != null) {
-      $("#cupa-picture-height").val(element.attr("height"));
-    }
     $("#cupa-picture-file").focus().trigger("click");
   }
 

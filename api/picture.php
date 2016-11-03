@@ -69,6 +69,10 @@ else {
     $picture_width = $picture_height * $ratio;
   }
 
+  // round
+  $picture_width = ceil($picture_width);
+  $picture_height = ceil($picture_height);
+
   // proceed with resize
   $src = imagecreatefromstring($picture_content);
   $dst = imagecreatetruecolor($picture_width, $picture_height);
