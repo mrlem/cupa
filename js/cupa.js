@@ -74,6 +74,10 @@ function Cupa() {
     });
   }
 
+  this.isAdmin = function() {
+    return isAdmin;
+  }
+
   //-------------------------------------------------------------------
   // private methods
 
@@ -272,7 +276,7 @@ function Cupa() {
 
   function _editPicture(element) {
     var specifiedWidth = element.attr("width");
-    if (specifiedWidth == null && element[0].style["width"] != null) {
+    if (specifiedWidth == null && element[0].style["width"]) {
       specifiedWidth = parseInt(element[0].style["width"]);
     }
     if (specifiedWidth != null) {
@@ -280,7 +284,7 @@ function Cupa() {
     }
 
     var specifiedHeight = element.attr("height");
-    if (specifiedHeight == null && element[0].style["height"] != null) {
+    if (specifiedHeight == null && element[0].style["height"]) {
       specifiedHeight = parseInt(element[0].style["height"]);
     }
     if (specifiedHeight != null) {
