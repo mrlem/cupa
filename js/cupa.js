@@ -110,6 +110,23 @@ function Cupa() {
       accept: "Image/*"
     }))
     .appendTo($("body"));
+
+    var fileForm = $("<form/>", {
+      id: "cupa-downloadable",
+      style: "display:none"
+    })
+    .append($("<input/>", {
+      id: "cupa-downloadable-id",
+      name: "id",
+      type: "hidden"
+    }))
+    .append($("<input/>", {
+      id: "cupa-downloadable-file",
+      name: "file",
+      type: "file",
+      accept: "*/*"
+    }))
+    .appendTo($("body"));
     
     var loginForm = $("<form/>", {
       id: "cupa-login",
@@ -166,6 +183,10 @@ function Cupa() {
       this.src = "data/img-" + this.id + ".jpg";
     });
 
+    $("a.cupa-downloadable").each(function() {
+      this.href = "data/downloadable-" + this.name + "?" + new Date().getTime();
+    });
+
     $(".cupa-editable").not("img").click(function(event) {
       if (!isAdmin) return;
       var target = $(event.target);
@@ -193,6 +214,18 @@ function Cupa() {
     $("#cupa-picture-file").change(function() {
       if (!isAdmin) return;
       _savePicture();
+    });
+
+    $("a.cupa-downloadable").click(function(event) {
+      if (!isAdmin) return;
+      var target = $(event.target);
+      _editDownloadable($(this));
+      event.preventDefault();
+    });
+
+    $("#cupa-downloadable-file").change(function() {
+      if (!isAdmin) return;
+      _saveDownloadable();
     });
 
     that.connect();
@@ -312,6 +345,35 @@ function Cupa() {
       $("#cupa-picture-width").val(null);
       $("#cupa-picture-height").val(null);
       $("#cupa-picture-file").val(null);
+      _onSaved();
+    })
+    .fail(function() {
+      _onNotSaved();
+    });
+  }
+
+  // .. files
+
+  function _editDownloadable(element) {
+    $("#cupa-downloadable-id").val(element.attr("name"));
+    $("#cupa-downloadable-file").focus().trigger("click");
+  }
+
+  function _saveDownloadable() {
+    $.ajax({
+      url: "api/downloadable.php",
+      type: "POST",
+      data: new FormData($("#cupa-downloadable")[0]),
+      processData: false,
+      contentType: false,
+      cache: false
+    })
+    .done(function() {
+      var downloadableId = $("#cupa-downloadable-id").val();
+      var downloadable = $("#" + downloadableId);
+      downloadable.removeAttr("href").attr("href", "data/downloadable-" + downloadableId + "?" + new Date().getTime());
+      $("#cupa-downloadable-id").val(null);
+      $("#cupa-downloadable-file").val(null);
       _onSaved();
     })
     .fail(function() {

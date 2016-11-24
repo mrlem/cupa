@@ -19,7 +19,7 @@ section {
   box-shadow: 4px 4px 20px #000;
 }
 
-article img {
+article img.cupa-editable {
   float: left;
   margin: 0 12px 12px 0;
   box-shadow: 2px 2px 8px #000;

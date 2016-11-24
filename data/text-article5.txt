@@ -1,0 +1,1 @@
+Cupa also allows you to place a downloadable file link.<br>Simply click it in admin mode to update the file!
