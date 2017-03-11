@@ -16,6 +16,9 @@ if ($text_content == null) {
     exit;
   }
   $text_content = file_get_contents($filename);
+  if (get_magic_quotes_gpc()) {
+    $text_content = stripslashes($text_content);
+  }
   echo $text_content;
 }
 // write the content, if admin
